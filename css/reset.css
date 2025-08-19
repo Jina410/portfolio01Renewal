@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&family=Song+Myung&display=swap');
+
+/*노말라이즈*/
+*{margin:0; padding:0;box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; color:inherit}
+html,body{width: 100%; height: 100%; font-family: "Noto Sans KR", sans-serif; color:#382511; font-size:16px;}
+button{background-color: transparent; border:none; outline: none; cursor: pointer;}

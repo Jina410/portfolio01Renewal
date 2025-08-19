@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <section id="banner"> <!--아, 헤더top이랑 섹션banner 이름 바꿔야는데.. 조져쓰.. -->
+
+  <section id="banner">
     <!--banner-->
     <!--header .top-->
     <header id="top">
       <div class="container">
         <nav class="nav">
-          <img src="img/logo/Logo.png">
+          <a href="#"><img src="img/logo/Logo.png"></a>
           <ul class="main_menu">
             <li><a href="#">브랜드</a></li>
             <li><a href="#">제품</a></li>
@@ -27,7 +29,6 @@
       </div>
     </header>
     <!--header .top END-->
-
     <div class="container">
       <div class="slide-wrap">
         <div class="textbox">
@@ -44,19 +45,28 @@
   </section>
   <!--banner END-->
 
-  <section id="#product-info">
+  <section id="product-info">
     <section class="container">
       <div class="info-box">
         <a href="#">포천일동 막걸리 소개<img src="img/icon/gobtn_right_arrow.png" alt="오른쪽화살표"></a>
         <p>93년 전통과 원칙을 지켜온 포천 일동 막걸리!</p>
       </div>
       <div class="slide-container">
-        <a href="#"><img src="img/icon/slideBtn_left_arrow.png" alt="왼쪽슬라이드버튼"></a>
-        <a href="#"><img src="img/icon/slideBtn_right_arrow.png" alt="오른쪽슬라이드버튼"></a>
+        <a class="arrowBox arrowleft" href="#"><img src="img/icon/slideBtn_left_arrow.png" alt="왼쪽슬라이드버튼"></a>
+        <a class="arrowBox arrowright" href="#"><img src="img/icon/slideBtn_right_arrow.png" alt="오른쪽슬라이드버튼"></a>
         <ul class="box-wrap">
           <li class="item-box">
             <div class="item-overlay">
-              <div class="best">best</div>
+              <div></div>
+              <img src="img/logo/PocheonIldong_logo.png" alt="포천일동막걸리로고">
+            </div>
+            <img src="img/Product_image/Makgeolli_img12.png" alt="1932포천일동\막걸리상품이미지">
+            <h5>1932포천일동막걸리</h5>
+            <p>6도 / 750ml</p>
+          </li>
+          <li class="item-box">
+            <div class="item-overlay">
+              <div class="best">BEST</div>
               <img src="img/logo/PocheonIldong_logo.png" alt="포천일동막걸리로고">
             </div>
             <img src="img/Product_image/Makgeolli_img04.png" alt="포천일동찹쌀막걸리상품이미지">
@@ -67,7 +77,7 @@
           <li class="item-box">
             <div class="item-overlay">
               <div class="best">best</div>
-              <img src="img/logo/PocheonIldong_logo.png" alt="담은로고">
+              <img src="img/logo/Dahmeun_logo.png" alt="담은로고">
             </div>
             <img src="img/Product_image/Makgeolli_img20.png" alt="담은화이트구름막걸리상품이미지">
             <h5>화이트 구름 막걸리</h5>
@@ -76,15 +86,72 @@
 
           <li class="item-box">
             <div class="item-overlay">
+              <div></div>
               <img src="img/logo/PocheonIldong_logo.png" alt="포천일동막걸리로고">
             </div>
             <img src="img/Product_image/Makgeolli_img12.png" alt="1932포천일동\막걸리상품이미지">
             <h5>1932포천일동막걸리</h5>
             <p>6도 / 750ml</p>
           </li>
+
+          <li class="item-box">
+            <div class="item-overlay">
+              <div></div>
+              <img src="img/logo/PocheonIldong_logo.png" alt="포천일동막걸리로고">
+            </div>
+            <img src="img/Product_image/Makgeolli_img12.png" alt="1932포천일동\막걸리상품이미지">
+            <h5>1932포천일동막걸리</h5>
+            <p>6도 / 750ml</p>
+          </li>
+
         </ul>
       </div>
     </section>
+  </section>
+
+  <section id="brand-info">
+    <div class="arrow-box">
+      <button tyle="button"><img src="img/icon/left-button.png"></button>
+      <button tyle="button"><img src="img/icon/right-button.png"></button>
+    </div>
+    <div class="container">
+      <div class="textbox">
+        <h2>포천일동 막걸리 이야기</h2>
+        <p>1932년부터 4대째 내려오는 "전통 비법"과<br>청계산의 정기가 깃든 "맑은 물"로<br>마음과 정성을 다해 빚습니다.</p>
+        <button type="button">자세히 알아보기</button>
+      </div>
+      <ul class="img-wrap">
+        <li class="img-area">
+          <div class="img-box">
+          <img src="img/background/brand-info-img02.png" alt="강 이미지">
+          </div>
+          <div class="text-box">
+            <h3>전통 비법</h3>
+            <p>1932년부터 4대재 내려오는 오랜 전통</p>
+          </div>
+        </li>
+
+        <li class="img-area">
+          <div class="img-box active">
+          <img src="img/background/brand-info-img01.png" alt="장독대 이미지">
+          </div>
+          <div class="text-box">
+            <h3>전통 비법</h3>
+            <p>1932년부터 4대재 내려오는 오랜 전통</p>
+          </div>
+        </li>
+
+        <li class="img-area">
+          <div class="img-box">
+          <img src="img/background/brand-info-img03.png" alt="장인의손 이미지">
+          </div>
+          <div class="text-box">
+            <h3>전통 비법</h3>
+            <p>1932년부터 4대재 내려오는 오랜 전통</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 </body>
 
