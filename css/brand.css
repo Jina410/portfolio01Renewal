@@ -1,0 +1,184 @@
+/*===================================*/
+/*#brand-banner*/
+#brand-banner{
+  width: 100%; min-width: 1280px; height: 900px;
+  background: url(../img/background/brand-banner-img01.png) no-repeat center/cover;
+}
+#brand-banner .container{
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brand-banner .container h1{
+  color: #f9f9f9;
+  font:bold 40px "Noto Serif KR";
+  text-align: center;
+}
+
+/*===================================*/
+/*#brand-story*/
+#brand-story{
+  width: 100%; min-width: 1280px;
+  background-color: #F5F5F5;
+}
+#brand-story .container{
+  padding-top:227px;
+  padding-bottom: 224px;
+}
+#brand-story .wrap{
+  width: 100%; height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 160px;
+}
+#brand-story .wrap .story-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap:60px;
+}
+#brand-story .wrap .story-box:nth-child(even){
+  flex-direction: row-reverse;
+}
+#brand-story .wrap .story-box .text-box{
+  margin:20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#brand-story .wrap .story-box .text-box h1{
+  font:bold 40px "Noto Serif KR";
+  line-height: 1;
+  margin-bottom: 31px;
+}
+#brand-story .wrap .story-box .text-box b{
+  font:bold 50px "Noto Serif KR";
+}
+#brand-story .wrap .story-box .text-box p{
+  color: #736D66;
+  line-height: 1.3;
+}
+#brand-story .wrap .story-box .img-box{ 
+  border-radius: 20px;
+  overflow: hidden;
+}
+#brand-story .wrap .story-box .img-box img,
+#brand-story .wrap-last img{
+  transform: scale(1.1);
+
+  animation: imgScale .8s ease-out forwards ;
+}
+
+#brand-story .wrap .story-box .text-box h1,
+#brand-story .wrap .story-box .text-box p,
+#brand-story .wrap .story-box .img-box{
+  opacity: 0;
+}
+#brand-story .wrap .story-box:nth-child(odd) .img-box,
+#brand-story .wrap .story-box:nth-child(even) .text-box h1,
+#brand-story .wrap .story-box:nth-child(even) .text-box p{
+  transform: translateX(200px);
+} 
+#brand-story .wrap .story-box:nth-child(even) .img-box,
+#brand-story .wrap .story-box:nth-child(odd) .text-box h1,
+#brand-story .wrap .story-box:nth-child(odd) .text-box p{
+  transform: translateX(-200px);
+} 
+
+/*animaton*/
+#brand-story .wrap .story-box:nth-child(odd) .img-box{
+  animation: moving .8s ease-out forwards ;
+}
+#brand-story .wrap .story-box:nth-child(even) .img-box{
+  animation: moving .8s ease-out forwards;
+}
+#brand-story .wrap .story-box:nth-child(odd) .text-box h1{
+  animation: moving .8s ease-out .1s forwards;
+}
+#brand-story .wrap .story-box:nth-child(even) .text-box h1{
+  animation: moving .8s ease-out .1s forwards;
+}
+#brand-story .wrap .story-box:nth-child(odd) .text-box p{
+  animation: moving .8s ease-out .2s forwards;
+}
+#brand-story .wrap .story-box:nth-child(even) .text-box p{
+  animation: moving .8s ease-out .2s forwards;
+}
+#brand-story .wrap .story-box .img-box img{
+  display: block;
+} 
+
+#brand-story .wrap-last{
+  margin-top:160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#brand-story .wrap-last .img-box{
+  width: fit-content; height: fit-content;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#brand-story .wrap-last .img-box img{
+  display: block;
+}
+#brand-story .wrap-last h1{
+  margin-top: 51px;
+  font:600 50px "Noto Serif KR";
+}
+#brand-story .wrap-last p{
+  margin-top: 31px;
+  color:#736D66;
+}
+
+#brand-story .wrap-last{
+  opacity: 0;
+  transform: translateY(300px);
+  animation: moving .8s ease-out forwards;
+}
+/*===================================*/
+/*#brand-hisory*/
+#brand-hisory{
+  width: 100%; min-width: 1280px; height: 2600px;
+}
+#brand-hisory .container{
+  padding-top:224px;
+}
+#brand-hisory .history-wrap{
+  display: flex;
+  justify-content: center;
+  gap:60px;
+}
+#brand-hisory .imgbox-warp{
+  display: flex;
+  flex-direction: column;
+}
+#brand-hisory .imgbox-warp h1{
+  margin-bottom: 20px;
+  
+  font:bold 40px "Noto Serif KR";
+}
+#brand-hisory .imgbox-warp .box{
+  margin-bottom: 438px;
+}
+#brand-hisory .imgbox-warp .box p{
+  color:#736D66;
+  text-indent:17px;
+  margin-top: 10px;
+}
+
+
+
+@keyframes moving{
+  100%{transform: translate(0); opacity: 1; }
+}
+@keyframes moving{
+  100%{transform: translate(0); opacity: 1;}
+}
+@keyframes imgScale{
+  100%{transform: scale(1);}
+}
