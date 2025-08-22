@@ -15,7 +15,7 @@
 <body>
   <!--사이드 고정 메뉴-->
   <div class="top">
-    <a href="#top"><img src="img/icon/top-button.png"></a>
+    <a href="#"><img src="img/icon/top-button.png"></a>
   </div>
 
   <!--header .top-->
@@ -46,6 +46,15 @@
 
     <!--#brand-story 이야기-->
     <section id="brand-story">
+      <!--사이드고정 서브메뉴-->
+      <div class="brand-moving-menu"><!--특정 자리 이동할 경우 메뉴가 바뀌게끔-->
+        <ul class="sub-menu">
+          <li class="active"><a href="#brand-story">이야기</a></li>
+          <li><a href="#brand-hisory">역사</a></li>
+          <li><a href="#brand-location">오시는길</a></li>
+        </ul>
+      </div>
+      <!--시작-->
       <div class="container">
         <ul class="wrap">
           <li class="story-box">
@@ -96,8 +105,8 @@
       <div class="container">
         <div class="history-wrap">
           <ul class="imgbox-warp">
-            <h1>1932포천일동막걸리</h1>
             <li class="box">
+              <h1>1932포천일동막걸리</h1>
               <img src="img/background/history-img01.png" alt="옛 포천일동막걸리">
               <p>양조장 설립</p>
             </li>
@@ -115,6 +124,12 @@
               <h2>1932.04</h2>
               <p>일동면 화대리 644번지<br>
                 이병규 옹 장천 양조장 설립</p>
+            <li class="txt-box">
+              <h2>1991.05</h2>
+              <ul class="txt-wrap">
+                <li>일동면 기산리31번지 사세 확장</li>
+                <li>자동 시스템으로 공장 이전 가동</li>
+              </ul>
             </li>
             <li class="txt-box">
               <h2>1995.01</h2>
@@ -122,6 +137,7 @@
                 <li>약주면허 취득</li>
                 <li>생보약주, 황진이_경기도 명주지정</li>
               </ul>
+            </li>
             </li>
             <li class="txt-box">
               <h2>2009.06</h2>
@@ -191,12 +207,51 @@
                 <li>Hypebeast 하입골프의 브랜드파트너</li>
               </ul>
             </li>
+            <div class="last-line"><img src="img/background/last-line.png"></div>
           </ul>
         </div>
       </div>
     </section>
+    <!--#brand-hisory END-->
 
+    <!--#brand-location 위치&연락처-->
+    <section id="brand-location">
+      <div class="container">
+        <article class="locatron-wrap">
+          <div class="text-wrap">
+            <h1>저희 양조장은<br>막걸리 구매와<br>역사관관람이 가능합니다.</h1>
+            <ul class="contact">
+              <li class="text-box">
+                <h1>술잔 기울이며</h1>
+                <h3>Contact</h3>
+              </li>
+              <li class="contact-info">
+                <p><b>전화 :</b> 031-532-3007</p>
+                <p><b>이메일 :</b> 1923ildong@naver.com</p>
+                <p><b>비즈니스 이메일 :</b> 1923ildong_b@gmail.com</p>
+              </li>
+            </ul>
+            <ul class="contact">
+              <li class="text-box">
+                <h1>주막길</h1>
+                <h3>Location</h3>
+              </li>
+              <li class="contact-info">
+                <p><b>도로명 주소 :</b> 경기 포천시 일동면 운악청계로 1597</p>
+                <p><b>지번 주소 :</b> 경기 포천시 일동면 기산리 31</p>
+                <p><b>영업 시간 :</b> 월~금 09:00 - 18:00</p>
+              </li>
+            </ul>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50341.70868257157!2d127.26118472167968!3d37.94545429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562d4d03a0013f7%3A0x64bea2f0772b6f54!2zKOyjvCkxOTMy7Y-s7LKc7J2864-Z66eJ6rG466as!5e0!3m2!1sko!2skr!4v1755844800180!5m2!1sko!2skr"
+            width="1190" height="510" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+      </div>
+    </section>
   </main>
+  <!--#brand-location END-->
 
   <!--#footer-->
   <footer id="footer">
@@ -232,25 +287,6 @@
 
 
   <script>
-    /*section #product-info 막걸리소개*/
-    function leftTranslate() {
-      document.querySelector("#product-info .box-wrap").style.transform = "translateX(-340px)"
-    }
-    function RightTranslate() {
-      document.querySelector("#product-info .box-wrap").style.transform = "translateX(340px)"
-    }
-
-    /*section #premium-product-info 프리미엄 막걸리*/
-    function black() {
-      document.querySelector("#premium-product-info .dissolve-wrap > li:nth-child(2)").style.opacity = "1"
-      document.querySelector("#premium-product-info .dissolve-btn > li:nth-child(2)").style.opacity = "1"
-      document.querySelector("#premium-product-info .dissolve-btn > li:nth-child(1)").style.opacity = "0.5"
-    }
-    function white() {
-      document.querySelector("#premium-product-info .dissolve-wrap > li:nth-child(2)").style.opacity = "0"
-      document.querySelector("#premium-product-info .dissolve-btn > li:nth-child(1)").style.opacity = "1"
-      document.querySelector("#premium-product-info .dissolve-btn > li:nth-child(2)").style.opacity = "0.5"
-    }
   </script>
 </body>
 

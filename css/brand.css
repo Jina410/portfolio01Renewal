@@ -1,8 +1,10 @@
+
 /*===================================*/
 /*#brand-banner*/
 #brand-banner{
   width: 100%; min-width: 1280px; height: 900px;
   background: url(../img/background/brand-banner-img01.png) no-repeat center/cover;
+  margin-top:80px;
 }
 #brand-banner .container{
   width: 100%; height: 100%;
@@ -18,7 +20,43 @@
 
 /*===================================*/
 /*#brand-story*/
+
+/*#brand-story 고정서브메뉴*/
+.brand-moving-menu{
+  position: fixed;
+  z-index: 999;
+  right: 0; top:80px;
+}
+.brand-moving-menu .sub-menu{
+  width: 120px; height: 100%;
+  text-align: right;
+  padding-right: 20px;
+}
+.brand-moving-menu .sub-menu li{
+  width: 100%;
+  padding:10px 0;
+  cursor: pointer;
+}
+.brand-moving-menu .sub-menu li a{
+  width: 100%;
+  display: inline-block;
+  color:#736D66;
+  font-weight: 400;
+  font-size: 20px;
+}
+.brand-moving-menu .sub-menu li.active a{
+  padding:16.5px 19px;
+  color: #2B231A;
+  font-weight: bold;
+  border-bottom:3px solid #D0AC88;
+}
+.brand-moving-menu .sub-menu li:hover:not(.active) a{
+  color: #2B231A;
+}
+
+/*start*/
 #brand-story{
+  position: relative;
   width: 100%; min-width: 1280px;
   background-color: #F5F5F5;
 }
@@ -88,7 +126,6 @@
   transform: translateX(-200px);
 } 
 
-/*animaton*/
 #brand-story .wrap .story-box:nth-child(odd) .img-box{
   animation: moving .8s ease-out forwards ;
 }
@@ -143,27 +180,27 @@
 /*===================================*/
 /*#brand-hisory*/
 #brand-hisory{
-  width: 100%; min-width: 1280px; height: 2600px;
+  width: 100%; min-width: 1280px;
 }
 #brand-hisory .container{
   padding-top:224px;
+  padding-bottom: 224px;
 }
 #brand-hisory .history-wrap{
   display: flex;
   justify-content: center;
   gap:60px;
 }
+
 #brand-hisory .imgbox-warp{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 #brand-hisory .imgbox-warp h1{
   margin-bottom: 20px;
   
   font:bold 40px "Noto Serif KR";
-}
-#brand-hisory .imgbox-warp .box{
-  margin-bottom: 438px;
 }
 #brand-hisory .imgbox-warp .box p{
   color:#736D66;
@@ -171,10 +208,110 @@
   margin-top: 10px;
 }
 
-
+#brand-hisory .textbox-wrap {
+  color:#736D66;
+  margin-top:314px;
+}
+#brand-hisory .textbox-wrap .start-txt{
+  border-bottom:1px solid #2B231A;
+  width: 194px;
+  padding-bottom: 19px;
+}
+#brand-hisory .textbox-wrap .start-txt h2{
+  color:#2B231A;
+  font:bold 30px "Noto Serif KR"
+}
+#brand-hisory .txt-box{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+#brand-hisory .textbox-wrap li:nth-child(2) h2,
+#brand-hisory .textbox-wrap li:nth-child(2) ul {
+  margin-top: 66px;
+}
+#brand-hisory .txt-box h2{
+  position: relative;
+  width: 194px; height: 130px;
+  font:bold 24px "Noto Serif KR";
+  color:#2B231A;
+  text-align: right;
+  padding-right: 36px;
+}
+#brand-hisory .txt-box ul::before {
+  content: "";
+  position: absolute;
+  left: 192px; top: 0;
+  width: 1px; height: 100%;
+  background: #2B231A;
+}
+#brand-hisory .txt-box .txt-wrap{
+  width: fit-content;
+  margin-top: 6px;
+  margin-left: 24px;
+}
+#brand-hisory .txt-box .txt-wrap li{
+  width: 300px;
+}
+#brand-hisory .textbox-wrap > .last-line{
+  position: relative;
+  left:192px;
+}
+/*===================================*/
+/*#brand-location*/
+#brand-location{
+  width:100%; min-width: 1280px;
+  background-color: #F5F5F5;
+}
+#brand-location .container{
+  padding-top:224px;
+  padding-bottom: 224px;
+}
+#brand-location .locatron-wrap .text-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom:96px;
+}
+#brand-location .locatron-wrap .text-wrap h1{
+  font:bold 40px "Noto Serif KR";
+  line-height: 1.32;
+}
+#brand-location .locatron-wrap .text-wrap .contact{
+  display: flex;
+  flex-direction: column;
+}
+#brand-location .locatron-wrap .text-wrap .contact .text-box{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom:29px;
+}
+#brand-location .locatron-wrap .text-wrap .contact .text-box h1{
+  font-size: 30px;
+}
+#brand-location .locatron-wrap .text-wrap .contact .text-box h3{
+  margin-left: 5px;
+  font:bold 20px "Noto Serif KR";
+  color: #CFCAC5;
+}
+#brand-location .locatron-wrap .text-wrap .contact::before{
+  content: "";
+  width: 40px; height: 3px;
+  background-color: #D0AC88;
+  margin-bottom: 20px;
+}
+#brand-location .locatron-wrap .text-wrap .contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color:#736D66;
+  font-size:16px;
+  font-weight: 400;
+}
 
 @keyframes moving{
-  100%{transform: translate(0); opacity: 1; }
+  100%{transform: translate(0); opacity: 1;}
 }
 @keyframes moving{
   100%{transform: translate(0); opacity: 1;}
