@@ -209,6 +209,7 @@
 }
 
 #brand-hisory .textbox-wrap {
+  position: relative;
   color:#736D66;
   margin-top:314px;
 }
@@ -230,6 +231,11 @@
 #brand-hisory .textbox-wrap li:nth-child(2) ul {
   margin-top: 66px;
 }
+#brand-hisory .textbox-wrap > .last-line{
+  position: absolute;
+  left:193px; bottom:-50px;
+}
+
 #brand-hisory .txt-box h2{
   position: relative;
   width: 194px; height: 130px;
@@ -241,7 +247,7 @@
 #brand-hisory .txt-box ul::before {
   content: "";
   position: absolute;
-  left: 192px; top: 0;
+  left: 193px; top: 0;
   width: 1px; height: 100%;
   background: #2B231A;
 }
@@ -253,10 +259,7 @@
 #brand-hisory .txt-box .txt-wrap li{
   width: 300px;
 }
-#brand-hisory .textbox-wrap > .last-line{
-  position: relative;
-  left:192px;
-}
+
 /*===================================*/
 /*#brand-location*/
 #brand-location{
