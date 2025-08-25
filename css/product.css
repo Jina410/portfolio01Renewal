@@ -95,7 +95,7 @@ main{
   width: 100%; height: auto;
   display: flex;
   flex-wrap: wrap;
-  gap:24px 19px;
+  gap:24px 50px;
 }
 #product-info-list .product-list .product-item{
   position: relative;
@@ -104,12 +104,17 @@ main{
 #product-info-list .product-list .product-item .overlay{
   position: absolute;
   width: 262px; height: 397px;
-  outline: 1px solid blue;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   gap:5px;
+  opacity: 0;
+
+  transition: .3s;
+}
+#product-info-list .product-list .product-item:hover .overlay{
+  opacity: 1;
 }
 #product-info-list .product-list .product-item .overlay .overlay-view{
   width: fit-content; height: fit-content;
@@ -123,4 +128,14 @@ main{
   border-radius: 20px;
   object-fit: cover;
   overflow: hidden;
+}
+#product-info-list .product-list .product-item h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+#product-info-list .product-list .product-item p{
+  font-size: 16px;
+  color:#736D66;
 }
